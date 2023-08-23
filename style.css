@@ -242,7 +242,7 @@ nav {
 /* ***************deals************ */
 
 .deals {
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 .deals h1 {
@@ -251,19 +251,39 @@ nav {
   text-decoration: underline;
   font-size: 40px;
   color: #088178;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .dealsContainer {
   display: flex;
   justify-content: center;
+  background-color: #e8eaf41f;
   align-items: center;
+}
+
+.dealCard {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.dealCard img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.dealName {
+  font-weight: 900;
 }
 
 .dealName,
 .dealPrice {
   margin-left: 20px;
+  font-family: Gilroy;
   font-size: 18px;
+  max-width: 50%;
 }
 
 /* ************brand************* */
@@ -356,6 +376,7 @@ nav {
 .featureHeading {
   font-size: 15px;
   color: rgba(83, 82, 82, 0.941);
+  font-family: gilroy;
 }
 
 .emoji {

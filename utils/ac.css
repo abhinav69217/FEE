@@ -273,13 +273,48 @@ nav {
 
 /* *********** customerReviews ***********/
 
+.customerReviews {
+  padding: 40px 20px;
+}
+
 .customerReviews h1 {
   text-align: center;
   font-family: cursive;
   text-decoration: underline;
   font-size: 40px;
   color: #088178;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.review img {
+  top: 7px;
+  left: 3px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+.review p {
+  margin-top: 15px;
+}
+
+.rating img {
+  width: 50px;
+  height: 50px;
 }
 
 /* ****************  footer  ************** */
