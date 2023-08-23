@@ -61,7 +61,6 @@ nav {
   list-style: none;
   padding: 0px 15px;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
 }
 
 .navList li a {
@@ -70,12 +69,22 @@ nav {
   color: black;
   display: inline-block;
   height: auto;
+  position: relative;
 }
 
-.navList li a:hover {
-  color: #088178;
-  text-decoration: underline;
-  transform: scale(1.1);
+.navList li a::after {
+  content: "";
+  transition: all ease 0.6s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #086f68;
+}
+
+.navList li a:hover::after {
+  width: 100%;
 }
 
 .navList li i {
@@ -221,8 +230,10 @@ nav {
 .relatedProducts h1 {
   text-align: center;
   font-family: cursive;
+  text-decoration: underline;
+  font-size: 40px;
   color: #088178;
-  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .moreProductsContainer {
@@ -258,6 +269,17 @@ nav {
 
 .icons2 {
   font-size: 18px;
+}
+
+/* *********** customerReviews ***********/
+
+.customerReviews h1 {
+  text-align: center;
+  font-family: cursive;
+  text-decoration: underline;
+  font-size: 40px;
+  color: #088178;
+  margin-bottom: 20px;
 }
 
 /* ****************  footer  ************** */

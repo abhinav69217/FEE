@@ -63,7 +63,6 @@ nav {
   list-style: none;
   margin-right: 20px;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
 }
 
 .navList li a {
@@ -312,6 +311,7 @@ nav {
 .features {
   padding: 40px 20px;
 }
+
 .features h1 {
   text-align: center;
   font-family: cursive;
@@ -320,6 +320,7 @@ nav {
   color: #088178;
   margin-bottom: 20px;
 }
+
 .featureContainer {
   display: flex;
   flex-wrap: wrap;
@@ -339,15 +340,17 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: #cbccd041; */
   height: auto;
 }
+
 .color {
   color: #088178;
 }
+
 .feature h3 {
   font-size: 22px;
   margin-bottom: 7px;
+  font-family: "Gilroy";
 }
 
 .featureHeading {
