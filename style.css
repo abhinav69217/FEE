@@ -265,7 +265,7 @@ nav {
   width: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
