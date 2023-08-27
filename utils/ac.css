@@ -271,6 +271,37 @@ nav {
   font-size: 18px;
 }
 
+.btn2 {
+  border: 2px solid #16a085;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0.25rem 0.25rem 0 rgba(22, 160, 133, 0.2);
+  color: #16a085;
+  cursor: pointer;
+  font-weight: 700;
+  background: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.btn2 span {
+  padding: 4px 8px;
+  border-radius: 0.5rem;
+  background: #16a085;
+  color: #fff;
+  transition: all 0.3s ease-out;
+  margin-left: 5px;
+}
+
+.btn2:hover {
+  background: #16a085;
+  color: #fff;
+}
+
+.btn2:hover span {
+  color: #16a085;
+  background: #fff;
+}
+
 /* *********** customerReviews ***********/
 
 .customerReviews {
@@ -397,5 +428,34 @@ footer {
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .footerLeft {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .footerRight {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footerRightContainer {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .aboutCompany {
+    max-width: 100%;
+  }
+
+  .footerContact {
+    padding: 10px;
   }
 }

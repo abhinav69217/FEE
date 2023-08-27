@@ -351,11 +351,11 @@ nav {
 }
 
 .feature {
-  border: 1.5px solid rgba(45, 43, 43, 0.721);
   text-align: center;
-  border-radius: 4px;
+  background-color: #e7e9f086;
+  border-radius: 14px;
   padding: 16px;
-  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px -7px 7px rgba(0, 0, 0, 0.15);
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -376,7 +376,6 @@ nav {
 .featureHeading {
   font-size: 15px;
   color: rgba(83, 82, 82, 0.941);
-  font-family: gilroy;
 }
 
 .emoji {
@@ -468,5 +467,34 @@ footer {
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .footerLeft {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .footerRight {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footerRightContainer {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .aboutCompany {
+    max-width: 100%;
+  }
+
+  .footerContact {
+    padding: 10px;
   }
 }
