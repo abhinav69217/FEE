@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="demo.css" />
   </head>
   <body>
-    <!--------------nav-------------- -->
+    <!--------------nav---------------->
 
     <nav>
       <div class="navBar">
-        <a href="./index.html"
+        <a href="../index.html"
           ><img
             class="navLogo"
             src="https://png.pngtree.com/png-clipart/20230116/original/pngtree-online-shopping-logo-desing-png-image_8918925.png"
@@ -29,6 +29,11 @@
           <li><a href="./SignUp.html">Account</a></li>
           <li><i class="fa-solid fa-cart-shopping"></i></li>
         </ul>
+        <i
+          class="fa-solid fa-bars"
+          id="menu-btn"
+          style="color: #0c0d0d; font-size: 32px"
+        ></i>
       </div>
     </nav>
 
@@ -143,5 +148,18 @@
         </div>
       </div>
     </footer>
+    <!-- script -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const navList = document.querySelector(".navList");
+
+      menuBtn.addEventListener("click", () => {
+        if (navList.style.display === "block") {
+          navList.style.display = "none";
+        } else {
+          navList.style.display = "block";
+        }
+      });
+    </script>
   </body>
 </html>

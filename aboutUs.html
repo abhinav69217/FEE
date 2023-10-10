@@ -29,6 +29,11 @@
           <li><a href="./utils/SignUp.html">Account</a></li>
           <li><i class="fa-solid fa-cart-shopping"></i></li>
         </ul>
+        <i
+          class="fa-solid fa-bars"
+          id="menu-btn"
+          style="color: #0c0d0d; font-size: 32px"
+        ></i>
       </div>
     </nav>
 
@@ -205,6 +210,38 @@
       </details>
     </section>
 
+    <!-- ------map------ -->
+    <div class="mapouter" style="margin: 0 auto; margin-bottom: 30px">
+      <div class="gmap_canvas">
+        <iframe
+          class="gmap_iframe"
+          width="100%"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=oxford&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </div>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          width: 50%;
+          height: 300px;
+        }
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          width: 100%;
+          height: 300px;
+        }
+        .gmap_iframe {
+          height: 300px !important;
+        }
+      </style>
+    </div>
+
     <!-- -----footer------- -->
     <footer>
       <div class="footer">
@@ -245,5 +282,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- ------script --------->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const navList = document.querySelector(".navList");
+
+      menuBtn.addEventListener("click", () => {
+        if (navList.style.display === "block") {
+          navList.style.display = "none";
+        } else {
+          navList.style.display = "block";
+        }
+      });
+    </script>
   </body>
 </html>
