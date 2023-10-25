@@ -11,11 +11,7 @@
   font-family: "Roboto Slab", serif;
 }
 
-*::-webkit-scrollbar {
-  display: none;
-}
-
-section:nth-child(even) {
+section:nth-child(odd) {
   background: #e3e6f393;
 }
 
@@ -24,8 +20,6 @@ body {
   height: 100%;
   width: 100%;
 }
-
-/* *********navBar ********** */
 
 nav {
   position: sticky;
@@ -59,16 +53,15 @@ nav {
   font-weight: 600;
   font-size: 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .navList li {
   list-style: none;
-  margin-right: 20px;
+  padding: 0px 15px;
   cursor: pointer;
 }
-
 .navList li a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -102,18 +95,10 @@ nav {
   animation: shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97);
 }
 
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
 #menu-btn {
   display: none;
 }
 
-/* ***************************************** */
 .container {
   display: flex;
   padding-top: 3rem;
@@ -241,93 +226,7 @@ button:hover {
   color: #333;
 }
 
-.pay {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 100px;
-  left: 300px;
-  padding: 25px;
-  min-height: 100vh;
-  padding-bottom: 5rem;
-  z-index: 99999999;
-}
-
-.pay form {
-  padding: 20px;
-  width: 700px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.pay form .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.pay form .row .col {
-  flex: 1 1 250px;
-}
-
-.pay form .row .col .title {
-  font-size: 20px;
-  color: #333;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.pay form .row .col .inputBox {
-  margin: 15px 0;
-}
-
-.pay form .row .col .inputBox span {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.pay form .row .col .inputBox input {
-  width: 100%;
-  border: 1px solid #ccc;
-  padding: 10px 15px;
-  font-size: 15px;
-  text-transform: none;
-}
-
-.pay form .row .col .inputBox input:focus {
-  border: 1px solid #000;
-}
-
-.pay form .row .col .flex {
-  display: flex;
-  gap: 15px;
-}
-
-.pay form .row .col .flex .inputBox {
-  margin-top: 5px;
-}
-
-.pay form .row .col .inputBox img {
-  height: 34px;
-  margin-top: 5px;
-  filter: drop-shadow(0 0 1px #000);
-}
-
-.pay form .submit-btn {
-  width: 100%;
-  padding: 12px;
-  font-size: 17px;
-  background: var(--green);
-  color: #fff;
-  border: none;
-  margin-top: 5px;
-  cursor: pointer;
-}
-
-.pay form .submit-btn {
-  background: #2ecc71;
-}
+/* ************footer****************** */
 
 footer {
   background: #e3e6f393;
@@ -386,18 +285,6 @@ footer {
 }
 .icons i {
   margin-right: 10px;
-}
-
-.close-button {
-  position: absolute;
-  top: 20px;
-  font-weight: 900;
-  right: 25px;
-  cursor: pointer;
-  font-size: 30px;
-  color: #000;
-  background: transparent;
-  border: none;
 }
 
 @keyframes shake {

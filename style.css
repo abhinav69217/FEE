@@ -505,6 +505,12 @@ footer {
   margin-right: 10px;
 }
 
+.name {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 16px;
+}
+
 @keyframes shake {
   10%,
   90% {
